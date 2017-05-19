@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test  Exception operation">
+<test name="Exception case">
+    <classes>
+        <class name="runner.ExceptionTest"></class>
+        <parameter name="TheadCount" value="2"></parameter>
+    </classes>
+</test>
+</suite>

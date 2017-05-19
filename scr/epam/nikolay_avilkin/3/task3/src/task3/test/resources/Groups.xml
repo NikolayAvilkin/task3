@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test  Grops ">
+    <listeners>
+        <listener class-name="listeners.MyListenerFirst"></listener>
+    </listeners>
+    <test name="Exclude div">
+        <groups>
+            <run>
+                <exclude name="div"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="runner.MultAndDivTest"></class>
+        </classes>
+    </test>
+</suite>

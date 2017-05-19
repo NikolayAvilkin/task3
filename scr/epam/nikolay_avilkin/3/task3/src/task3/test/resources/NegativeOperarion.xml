@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test  negative operation">
+    <listeners>
+        <listener class-name="listeners.MyListenerFirst"></listener>
+    </listeners>
+    <test name="Negative case">
+        <classes>
+            <class name="runner.SumAndSubTest">
+                <methods>
+                    <include name="testN.*"></include>
+                </methods>
+            </class>
+            <class name="runner.MultAndDivTest">
+                <methods>
+                    <include name="testN.*"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

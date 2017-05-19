@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test operation">
+    <listeners>
+        <listener class-name="listeners.MyListenerFirst"></listener>
+    </listeners>
+    <test name="Positive case">
+    <classes>
+        <class name="runner.SumAndSubTest">
+            <methods>
+                <include name="testP.*"></include>
+            </methods>
+        </class>
+        <parameter name="TheadCount" value="2"></parameter>
+        <class name="runner.MultAndDivTest">
+            <methods>
+                <include name="testP.*"></include>
+            </methods>
+        </class>
+        <parameter name="TheadCount" value="2"></parameter>
+    </classes>
+    </test>
+</suite>
